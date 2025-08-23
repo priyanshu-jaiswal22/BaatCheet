@@ -1,0 +1,85 @@
+.meetVideoContainer {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(135deg, #000428, #004e92);
+
+}
+
+.meetUserVideo {
+    position: absolute;
+    bottom: 10vh;
+    height: 20vh;
+    width: auto;
+    left: 0;
+    border-radius: 20px;
+    
+}
+
+.buttonContainers {
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    text-align: center;
+}
+
+.buttonContainers svg {
+    font-size: 2.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 6px;
+    margin:  2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttonContainers svg:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.conferenceView { 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.conferenceView  video {
+    width: 20vw;
+    height: 25vh;
+    min-width: 20vw;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.conferenceView video:hover {
+    transform: scale(1.02);
+}
+
+.chatRoom {
+    position: absolute;
+    height: 90vh;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    width: 25vw;
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatContainer {
+    position: relative;
+    height: 100%;
+}
+
+
+.chattingArea {
+    position: absolute;
+    bottom: 0;
+}

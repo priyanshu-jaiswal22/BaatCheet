@@ -1,0 +1,182 @@
+.landingPageContainer {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #111827, #000000);
+  font-family: 'Poppins', sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.landingPageContainer nav {
+  padding-inline: 1.2rem;
+  padding-block: 1.6rem;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.landingPageContainer nav .navlist {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  display: flex;
+  height: 3rem;
+  width: fit-content; 
+  border-radius: 1.4rem;
+  cursor: pointer;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  gap: 4.6rem;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+   
+}
+
+@media (min-width: 640px) {
+  .landingPageContainer nav .navlist {
+    gap: 3.5rem;
+    font-size: 1.125rem;
+    padding: 1.5rem 2rem; 
+  }
+}
+
+.navlist p:hover {
+  color: rgb(70, 138, 241);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+
+.landingMainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  gap:1rem;
+}
+
+
+
+.landingMainContainer h1 {
+  text-align: center;
+  font-size: 3.75rem;
+  font-weight: 500;
+  background: linear-gradient(to right, #60a5fa, #a855f7);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text;
+  color: transparent;
+} 
+
+.landingMainContainer p {
+  display: flex;
+  max-width: 450px;
+  text-align: center;
+}
+
+.landingMainContainer button {
+  line-height: 2.4rem;
+  padding: 0 1.25rem;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 3.5rem;
+  box-shadow: 0 .25rem 0.35rem rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease; 
+  cursor: pointer;
+}
+.landingMainContainer button:hover{
+  background-color: #2563eb; /* keep bg */
+  background-image: linear-gradient(to right, #60a5fa, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.cardContainer {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap; /* wrap on small screens */
+  margin-top: 2rem;
+  
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1.4rem;
+  padding: 2rem;
+  width: 24rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-direction: column;  
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(4, 49, 139, 0.467);
+  
+}
+
+.card h3 {
+  margin-bottom: .8rem;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1.25rem;
+  text-align: center;
+}
+
+.navBar h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  background: linear-gradient(to right, #60a5fa, #a855f7);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text;
+  color: transparent;
+}
+
+.meetContainer{
+  display: flex;
+  padding-inline: 1.25rem;
+  height: 80vh;
+  gap: 10vh;
+  justify-content: center;
+}
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel > img {
+  width: 30vw;
+  height: auto;
+  border-radius: 20px;
+}
